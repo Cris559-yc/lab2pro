@@ -1,23 +1,22 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# 1. Cargar el dataset
+# Cargar el dataset
 df = pd.read_csv("Amazon Big Billion Sale 2025 -Oct Mobile Phones.csv")
 
-# ============================================================
-# 2. Resumen estadístico
+# Resumen estadístico
 print("🔹 Resumen estadístico (numérico):")
 print(df.describe())  # solo variables numéricas
 
 print("\n🔹 Resumen estadístico (completo):")
 print(df.describe(include='all'))  # incluye categóricas y numéricas
 
-# ============================================================
-# 3. Tipos de datos
+
+# Tipos de datos
 print("\n🔹 Tipos de datos por columna:")
 print(df.dtypes)
 
-# ============================================================
+
 # 4. Primeros y últimos registros
 print("\n🔹 Primeros registros:")
 print(df.head())
@@ -25,8 +24,8 @@ print(df.head())
 print("\n🔹 Últimos registros:")
 print(df.tail())
 
-# ============================================================
-# 5. Ordenar resultados por precio (si existe la columna)
+
+# Ordenar resultados por precio 
 if "Price" in df.columns:
     print("\n🔹 Productos más baratos:")
     print(df.sort_values(by="Price", ascending=True).head(5))
@@ -34,8 +33,8 @@ if "Price" in df.columns:
     print("\n🔹 Productos más caros:")
     print(df.sort_values(by="Price", ascending=False).head(5))
 
-# ============================================================
-# 6. Medidas estadísticas sobre las columnas numéricas
+
+# Medidas estadísticas sobre las columnas numéricas
 if "Price" in df.columns:
     media_precio = df["Price"].mean()
     mediana_precio = df["Price"].median()
@@ -54,8 +53,8 @@ if "Review_Count" in df.columns:
     media_reviews = df["Review_Count"].mean()
     print(f"\n🔹 Reseñas promedio: {media_reviews:.2f}")
 
-# ============================================================
-# 7. Gráficos opcionales (se abrirán en ventana aparte)
+
+# Gráficos (se abrirán en ventana aparte)
 
 # Histograma de precios
 if "Price" in df.columns:
