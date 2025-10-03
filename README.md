@@ -1,4 +1,6 @@
 Respuesta a preguntas.
+Lindys Arely Martinez Herrera SMSS170822
+Cristian Yahir Campos Aparicio SMSS109222
 1.Describe brevemente de qué trata el dataset utilizado
 El dataset utilizado corresponde a la venta especial Amazon Big Billion Sale 2025 - Octubre, centrado en teléfonos móviles y accesorios relacionados. Contiene un total de 3,529 registros con información detallada de cada producto, incluyendo el nombre, precio, calificación de usuarios, cantidad de reseñas, el identificador de Amazon (ASIN) y el enlace directo al producto. Su objetivo es mostrar un panorama general de los móviles y artículos complementarios ofertados durante el evento, permitiendo analizar tanto los modelos de gama alta como los accesorios más económicos.
 
